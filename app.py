@@ -20,9 +20,7 @@ if not api_key:
 client = OpenAI(api_key=api_key)
 
 # Initialize Flask app and configure the template and static folder paths
-app = Flask(__name__, 
-            template_folder=os.path.join(os.path.pardir, 'Site'),  # Path to the templates folder
-            static_folder='../static')  # Path to the static folder (CSS, JS, Images, etc.)
+app = Flask(__name__)
 
 # Route for the index page (landing page)
 @app.route('/')
