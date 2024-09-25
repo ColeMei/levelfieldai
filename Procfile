@@ -1,1 +1,1 @@
-web: gunicorn Utils.apicalling:app
+web:gunicorn app:app
